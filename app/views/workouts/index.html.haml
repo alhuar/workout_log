@@ -1,1 +1,4 @@
 %h4 Workout Index
+- @workouts.each do |workout|
+  %h4= link_to format_date(workout.date), workout_path(workout)
+  %h3= workout.workout
